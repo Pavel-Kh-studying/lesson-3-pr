@@ -42,11 +42,11 @@ console.log(getAverageValue());
 //=========(Math.random)==========
 //Выведите на экран случайное целое число от 1 до 100.
 
-function getRandomNum(maxNum) {
-  return Math.floor(Math.random() * Math.floor(maxNum));
+function getRandomNum() {
+  return Math.ceil(Math.random() * 100);
 }
 
-console.log(getRandomNum(100));
+console.log(getRandomNum());
 
 
 
@@ -57,7 +57,7 @@ function fillRandomArr() {
   maxLimit = 9.0071993e+15;
   minLimit = -9.0071993e+15;
   for (let i = 0; i < 10; i++) {
-    randomArr[i] = Math.floor(Math.random() * (maxLimit - minLimit + 1)) + minLimit;
+    randomArr[i] = Math.floor(Math.random() * (maxLimit - minLimit + 1) + minLimit);
   }
   return randomArr;
 }
